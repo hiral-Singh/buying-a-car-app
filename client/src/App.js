@@ -11,18 +11,18 @@ import './styles/main.css';
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/car/:id" component={CarDetails} />
-          <Route path="/search" component={SearchResults} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/checkout" component={Checkout} />
-        </Switch>
-      </div>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/car/:id" component={CarDetails} />
+        <Route path="/search" component={SearchResults} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/checkout" component={Checkout} />
+      </Switch>
     </Router>
   );
 }
 
 export default App;
+
+

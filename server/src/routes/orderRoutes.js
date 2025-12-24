@@ -13,7 +13,7 @@ router.get('/', authMiddleware, orderController.getUserOrders);
 router.get('/:id', authMiddleware, orderController.getOrderById);
 
 // Update an order status
-router.put('/:id', authMiddleware, orderController.updateOrderStatus);
+router.put('/:id', authMiddleware, orderController.updateOrder);
 
 // Delete an order
 router.delete('/:id', authMiddleware, orderController.deleteOrder);

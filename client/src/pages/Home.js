@@ -29,25 +29,33 @@ const Home = () => {
 
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
+    // return (
+    //     <div className="container">
+    //         <h1 className="mt-4">Welcome to the Car Buying App</h1>
+    //         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+    //         <div className="row">
+    //             {currentCars.map(car => (
+    //                 <div className="col-md-4" key={car.id}>
+    //                     <CarCard car={car} />
+    //                 </div>
+    //             ))}
+    //         </div>
+    //         <Pagination 
+    //             carsPerPage={carsPerPage} 
+    //             totalCars={filteredCars.length} 
+    //             paginate={paginate} 
+    //             currentPage={currentPage} 
+    //         />
+    //     </div>
+    // );
+
+
     return (
-        <div className="container">
-            <h1 className="mt-4">Welcome to the Car Buying App</h1>
-            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-            <div className="row">
-                {currentCars.map(car => (
-                    <div className="col-md-4" key={car.id}>
-                        <CarCard car={car} />
-                    </div>
-                ))}
-            </div>
-            <Pagination 
-                carsPerPage={carsPerPage} 
-                totalCars={filteredCars.length} 
-                paginate={paginate} 
-                currentPage={currentPage} 
-            />
-        </div>
-    );
+  <div style={{ padding: "40px" }}>
+    <h1>HOME IS RENDERING</h1>
+    <p>Total cars: {cars.length}</p>
+  </div>
+);
 };
 
 export default Home;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './CarCard.css'; // Assuming you have a CSS file for styling
+// import './CarCard.css'; // Assuming you have a CSS file for styling
 
 const CarCard = ({ car }) => {
     return (
